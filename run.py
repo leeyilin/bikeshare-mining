@@ -807,7 +807,7 @@ def main(argv):
     if len(argv) == 1:
         return
     elif argv[1] == 'train':
-        my_y_predict = run( trainfile, test_file_name=testfile)
+        my_y_predict = run(trainfile, testfile)
     elif argv[1] == 'show':
         df = load_data(trainfile)
         df = preprocess(df)
